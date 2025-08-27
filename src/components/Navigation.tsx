@@ -36,7 +36,11 @@ export const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <span className="text-2xl font-bold text-primary">Enwiring</span>
+            <img 
+              src="/lovable-uploads/abe7fbd9-991e-4807-9b61-8d256d89cdd3.png" 
+              alt="Enwiring Logo" 
+              className="h-8 w-auto"
+            />
           </div>
 
           {/* Desktop Navigation */}

@@ -7,7 +7,14 @@ export const Footer = () => {
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-6 md:mb-0">
-              <h3 className="text-2xl font-bold mb-2">Enwiring Kft.</h3>
+              <div className="flex items-center mb-3">
+                <img 
+                  src="/lovable-uploads/abe7fbd9-991e-4807-9b61-8d256d89cdd3.png" 
+                  alt="Enwiring Logo" 
+                  className="h-10 w-auto filter brightness-0 invert"
+                />
+                <span className="ml-3 text-xl font-bold">Kft.</span>
+              </div>
               <p className="text-primary-foreground/80">
                 Engineering Excellence in Complex Solutions
               </p>
