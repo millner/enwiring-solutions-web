@@ -28,7 +28,8 @@ export const ProjectsSection = () => {
         ? 'Design, deployment, and operation of an automated, explosion-proof subsurface contamination extraction system.'
         : 'Automata robbanásbiztos földalatti szennyezéskitermelő rendszer tervezése, telepítése és üzemeltetése',
       icon: Shield,
-      tags: ['Automation', 'Safety']
+      tags: ['Automation', 'Safety'],
+      image: '/lovable-uploads/f7b5630c-a968-495a-8aa3-a64b3306dabc.png'
     },
     {
       title: language === 'en' ? 'Hajduhadház – Hungarian Defence Training Base' : 'Hajdúhadház HM kiképzőbázis',
@@ -102,30 +103,39 @@ export const ProjectsSection = () => {
               {industrialProjects.map((project, index) => {
                 const IconComponent = project.icon;
                 return (
-                  <Card key={index} className="p-6 hover:shadow-elevated transition-all duration-300 group">
-                    <div className="flex items-start space-x-4">
-                      <div className="flex-shrink-0">
-                        <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center group-hover:shadow-glow transition-shadow duration-300">
-                          <IconComponent className="text-primary-foreground" size={20} />
-                        </div>
-                      </div>
-                      <div className="flex-1">
-                        <h4 className="text-lg font-semibold text-primary mb-2 group-hover:text-primary-glow transition-colors">
-                          {project.title}
-                        </h4>
-                        <p className="text-muted-foreground mb-3 leading-relaxed">
-                          {project.description}
-                        </p>
-                        <div className="flex flex-wrap gap-2">
-                          {project.tags.map((tag, tagIndex) => (
-                            <Badge key={tagIndex} variant="secondary" className="text-xs">
-                              {tag}
-                            </Badge>
-                          ))}
-                        </div>
+                <Card key={index} className="p-6 hover:shadow-elevated transition-all duration-300 group">
+                  {project.image && (
+                    <div className="mb-4 rounded-lg overflow-hidden">
+                      <img 
+                        src={project.image} 
+                        alt={project.title}
+                        className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                  )}
+                  <div className="flex items-start space-x-4">
+                    <div className="flex-shrink-0">
+                      <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center group-hover:shadow-glow transition-shadow duration-300">
+                        <IconComponent className="text-primary-foreground" size={20} />
                       </div>
                     </div>
-                  </Card>
+                    <div className="flex-1">
+                      <h4 className="text-lg font-semibold text-primary mb-2 group-hover:text-primary-glow transition-colors">
+                        {project.title}
+                      </h4>
+                      <p className="text-muted-foreground mb-3 leading-relaxed">
+                        {project.description}
+                      </p>
+                      <div className="flex flex-wrap gap-2">
+                        {project.tags.map((tag, tagIndex) => (
+                          <Badge key={tagIndex} variant="secondary" className="text-xs">
+                            {tag}
+                          </Badge>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </Card>
                 );
               })}
             </div>

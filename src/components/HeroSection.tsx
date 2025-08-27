@@ -18,8 +18,8 @@ export const HeroSection = () => {
       {/* Background */}
       <div className="absolute inset-0">
         <img 
-          src={heroImage} 
-          alt="Engineering excellence"
+          src="/lovable-uploads/f7b5630c-a968-495a-8aa3-a64b3306dabc.png" 
+          alt="Enwiring control systems and monitoring equipment"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-transparent" />
