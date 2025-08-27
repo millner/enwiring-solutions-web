@@ -39,7 +39,7 @@ export const Navigation = () => {
             <img 
               src="/lovable-uploads/abe7fbd9-991e-4807-9b61-8d256d89cdd3.png" 
               alt="Enwiring Logo" 
-              className="h-8 w-auto"
+              className="h-12 w-auto"
             />
           </div>
 

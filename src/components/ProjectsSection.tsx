@@ -20,7 +20,8 @@ export const ProjectsSection = () => {
         ? 'Installation of an aerobic and anaerobic pilot-scale biological hydrocarbon degradation system in a contaminated area.'
         : 'Aerob és anaerob kísérleti biológiai szénhidrogénbontó technológia injektálásának kiépítése szennyezett területen.',
       icon: Droplets,
-      tags: ['Environmental', 'Biotech']
+      tags: ['Environmental', 'Biotech'],
+      image: '/lovable-uploads/095b9f25-c015-442c-b713-cfdb3789a825.png'
     },
     {
       title: language === 'en' ? 'Gárdony – MOL Pipeline Incident' : 'Gárdony - MOL termékvezeték-sérülés',
@@ -29,7 +30,7 @@ export const ProjectsSection = () => {
         : 'Automata robbanásbiztos földalatti szennyezéskitermelő rendszer tervezése, telepítése és üzemeltetése',
       icon: Shield,
       tags: ['Automation', 'Safety'],
-      image: '/lovable-uploads/f7b5630c-a968-495a-8aa3-a64b3306dabc.png'
+      image: '/lovable-uploads/def60f5b-baca-4f62-a0d1-9be7982c6f80.png'
     },
     {
       title: language === 'en' ? 'Hajduhadház – Hungarian Defence Training Base' : 'Hajdúhadház HM kiképzőbázis',
@@ -37,7 +38,8 @@ export const ProjectsSection = () => {
         ? 'Full design and implementation of an automated pump-and-treat groundwater remediation system.'
         : 'Automata talajvíz-tisztító pump and treat rendszer teljes körű tervezése és kivitelezése.',
       icon: Building2,
-      tags: ['Water Treatment', 'Automation']
+      tags: ['Water Treatment', 'Automation'],
+      image: '/lovable-uploads/6ff31be2-9704-422f-8064-76b96bc408dd.png'
     },
     {
       title: language === 'en' ? 'Győr – Serfőződombi Area' : 'Győr – Serfőződombi dűlő',
@@ -45,7 +47,8 @@ export const ProjectsSection = () => {
         ? 'Aerobic biological remediation system with subsurface air and nutrient injection.'
         : 'Aerob biológiai kármentesítő rendszer talajszondás levegő és tápanyag injektálás.',
       icon: Droplets,
-      tags: ['Environmental', 'Remediation']
+      tags: ['Environmental', 'Remediation'],
+      image: '/lovable-uploads/7b94435b-6bcc-445f-a580-17e7654a815e.png'
     }
   ];
 
@@ -89,14 +92,14 @@ export const ProjectsSection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-6">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-6 drop-shadow-sm">
               {t('projects.title')}
             </h2>
           </div>
 
           {/* Industrial Projects */}
           <div className="mb-16">
-            <h3 className="text-2xl font-bold text-primary mb-8 text-center">
+            <h3 className="text-2xl font-bold text-primary mb-8 text-center drop-shadow-sm">
               {t('projects.industrial')}
             </h3>
             <div className="grid md:grid-cols-2 gap-6">
@@ -143,7 +146,7 @@ export const ProjectsSection = () => {
 
           {/* Special Projects */}
           <div>
-            <h3 className="text-2xl font-bold text-primary mb-8 text-center">
+            <h3 className="text-2xl font-bold text-primary mb-8 text-center drop-shadow-sm">
               {t('projects.special')}
             </h3>
             <div className="grid md:grid-cols-2 gap-6">
